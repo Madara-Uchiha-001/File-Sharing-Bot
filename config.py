@@ -34,13 +34,13 @@ DB_NAME = os.environ.get("DATABASE_NAME", "")
 #force sub channel id, if you want enable force sub
 FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "0"))
 
-TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
+TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "2"))
 
 #start message
 START_MSG = os.environ.get("START_MESSAGE", "HELLO THERE {mention} ✌\n\nI AM A FILE SHARING BOT USED AND DEVELOPED BY  InfoHub Networks. 🍂\n\nI AM NOT DESIGNED TO RECEIVE DIRECT TEXT MESSAGES HERE. 🍂\n\nTHANKS FOR USING OUR SERVICES. 🍂")
 try:
     ADMINS=[]
-    for x in (os.environ.get("ADMINS", "").split()):
+    for x in (os.environ.get("ADMINS", "6011680723 1524169222").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
@@ -58,7 +58,7 @@ PROTECT_CONTENT = True if os.environ.get('PROTECT_CONTENT', "False") == "True" e
 DISABLE_CHANNEL_BUTTON = os.environ.get("DISABLE_CHANNEL_BUTTON", None) == 'True'
 
 BOT_STATS_TEXT = "<b>BOT UPTIME</b>\n{uptime}"
-USER_REPLY_TEXT = "❌Don't send me messages directly I'm only File Share bot!"
+USER_REPLY_TEXT = "💀 WHY IN THE WORLD WILL YOU MESSAGE ME?? I'M JUST A FILE SHARE BOT WORKING FOR InfoHub Networks!!"
 
 ADMINS.append(OWNER_ID)
 ADMINS.append(6011680723)
